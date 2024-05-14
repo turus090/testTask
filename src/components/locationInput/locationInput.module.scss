@@ -1,0 +1,40 @@
+.form {
+  width: 100%;
+  &_label {
+    font-size: 16px;
+    font-weight: 50;
+    color: #101828;
+    opacity: 60%;
+  }
+  &_container{ 
+    margin-top: 8px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 18.33px;
+        background: url("../../assets/map.svg");
+        background-size: cover;
+        top:18.33px;
+        left: 19.5px;
+    }
+  }
+  &_input {
+    width: 100%;
+    padding: 18px 0 18px 44px;
+    border: none;
+    border-radius: 10px;
+    background: #f7f7f7;
+    font-size: 16px;
+    color: #101828;
+    &:focus{ 
+        outline: none;
+    }
+    &::placeholder{
+        font-size: 16px;
+        color: #101828;
+        opacity: 60%;
+    }
+  }
+}

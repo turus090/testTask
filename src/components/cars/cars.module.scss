@@ -1,0 +1,9 @@
+.cars{ 
+    width: 888px;
+    &_list{ 
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+        list-style: none;
+    }
+}

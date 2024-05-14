@@ -1,0 +1,17 @@
+.btn {
+  cursor: pointer;
+  height: 56px;
+  border: none;
+  border-radius: 200px;
+  background: #E44848;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFF;
+
+  &_big {
+    width: 173px;
+  }
+  &_default {
+    width: 166px;
+  }
+}

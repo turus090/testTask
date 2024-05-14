@@ -1,0 +1,49 @@
+.filter{ 
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    &_subtitle{ 
+         font-size: 16px;
+         font-weight: 500;
+         color: #475467;
+    }
+    &_title{ 
+        padding-top: 14px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #101828;
+    }
+    &_list{ 
+        margin-top: 24px;
+        padding-top: 24px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 10px;
+        list-style: none;
+        border-top:1px solid #10182810;
+        &_item{ 
+            cursor: pointer;
+            padding: 17px 18px;
+            min-width: 70px;
+            max-width: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 8px;
+            border-radius: 10px;
+            border: 1px solid #10182820;
+            &_text{ 
+                font-size: 16px;
+                font-weight: 500;
+                color: #101828;
+                text-align: center;
+            }
+            &_active{ 
+                border: 1px solid #E44848;
+            }
+        }
+    }
+}

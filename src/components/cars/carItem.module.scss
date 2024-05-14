@@ -1,0 +1,13 @@
+.car{ 
+    padding: 24px;
+    width: calc(100% - 48px);
+    border-radius: 20px;
+    border: 1px solid #10182820;
+    display: flex;
+    column-gap: 24px;
+    &_img{ 
+        width: 290px;
+        height: 310px;
+        border-radius: 10px;
+    }
+}
