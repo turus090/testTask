@@ -1,6 +1,7 @@
 import s from "./carItem.module.scss";
 import { AddressIcon, HeartIcon, StarIcon } from "../assets/icons";
 import Button from "../assets/button/button";
+import ParamItem from "./paramItem";
 
 const CarItem = ({
   name,
@@ -10,6 +11,10 @@ const CarItem = ({
   reviews,
   location,
   description,
+  adults,
+  transmission,
+  engine,
+  details
 }) => {
   return (
     <li className={s.car}>
@@ -25,20 +30,26 @@ const CarItem = ({
         <div className={s.car_right_middle}>
           <div className={s.car_right_middle_group}>
             <StarIcon />
-            <p className={s.car_right_middle_group_rating}>
+            <p className={s.car_right_middle_group_text}>
               {rating}({reviews.length} Reviews)
             </p>
           </div>
           <div className={s.car_right_middle_group}>
             <AddressIcon />
-            <p className={s.car_right_middle_group_location}>{location}</p>
+            <p className={s.car_right_middle_group_text}>{location}</p>
           </div>
         </div>
         <p className={s.car_right_description}>{
-           
-             description 
-            
+             description.length < 72 ? description : description.slice(0,72)+"..."
         }</p>
+        <ul className={s.car_right_params}>
+          <ParamItem type="users" text={`${adults} adults`} />
+          <ParamItem type="transmission" text={transmission}/>
+          <ParamItem type="petrol" text={engine}/>
+          {details.kitchen !== 0 && <ParamItem type="kitchen" text="Kitchen"/>}
+          <ParamItem type="bed" text={`${details.beds} beds`}/>
+          {details.airConditioner !== 0 && <ParamItem type="ac" text="AC"/>}
+        </ul>
         <Button text="Show more" />
       </div>
     </li>

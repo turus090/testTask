@@ -10,4 +10,56 @@
         height: 310px;
         border-radius: 10px;
     }
+    &_right{
+        &_top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &_name {
+                font-weight: 600;
+                font-size: 24px;
+                color: #101828;
+            }
+            &_group{
+                display: flex;
+                column-gap: 10px;
+                align-items: center;
+                &_price{
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: #101828;
+                }
+            }
+        }
+        &_middle{
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            column-gap: 18px;
+            &_group{
+                display: flex;
+                column-gap: 4px;
+                align-items: center;
+                &_text{
+                    font-size: 16px;
+                    color: #101828;
+                }
+            }
+        }
+        &_description{
+            margin-top: 24px;
+            font-size: 16px;
+            color:#475467;
+        }
+        &_params{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        button{
+            margin-top: 24px;
+        }
+    }
+
 }
