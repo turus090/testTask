@@ -1,6 +1,7 @@
 {
   "name": "cars",
   "version": "0.1.0",
+  "homepage": "https://turus090.github.io/testTask/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
