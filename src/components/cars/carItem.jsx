@@ -4,6 +4,7 @@ import Button from "../assets/button/button";
 import ParamItem from "./paramItem";
 
 const CarItem = ({
+  _id,
   name,
   gallery,
   price,
@@ -50,7 +51,7 @@ const CarItem = ({
           <ParamItem type="bed" text={`${details.beds} beds`}/>
           {details.airConditioner !== 0 && <ParamItem type="ac" text="AC"/>}
         </ul>
-        <Button text="Show more" />
+        <Button text="Show more" action="openModal" id={_id} />
       </div>
     </li>
   );
